@@ -1,25 +1,17 @@
-import { useState } from "react";
+// import { useState } from "react";
+
+import Avatar from "./Avatar";
+
+function Button() {
+  return <button>Click Me!</button>;
+}
 
 function App() {
-  const [count, setCount] = useState(0)
-
-  const increment = () => {
-    // let tempCount = count;
-    setCount(count +1)
-  }
-
-  const decrement = () => {
-    // let tmepCount = count;
-    setCount(count - 1)
-  }
-
   return (
-    <div className="App">
-      <> 
-      <div>Counter: {count} </div>
-      <button onClick={increment}>Increment</button>
-      <button onClick={decrement}>Decrement</button>
-      </>
+    <div>
+      <h1>Welcome to My App</h1>
+      <Button />
+      <Avatar name="Heddy Lemar" img="https://i.imgur.com/yXOvdOSs.jpg"/>
     </div>
   );
 }
